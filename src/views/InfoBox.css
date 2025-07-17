@@ -20,6 +20,8 @@
 .weatherInfo,
 .clothesSuggestion {
   background-color: #edfcff;
+  height: 250px;
+  
   flex: 1 1 45%;
   border-radius: 10px;
   padding: 1rem;
@@ -46,7 +48,7 @@
 
 
 /* ✅ MOBILE RESPONSIVE FIX */
-@media (max-width: 650px) {
+@media (min-width: 400px) {
   .InfoBox {
   display: flex;
   justify-content: center; /* Horizontal centering */
