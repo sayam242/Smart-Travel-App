@@ -24,7 +24,7 @@
 .CityInput {
   background-color: #edfcff;
   border-radius: 6px !important;
-  height: 50px !important;
+  height: 50px ;
   font-size: 0.9rem;
   width: 100%;
   padding: 0 10px !important;
@@ -69,14 +69,15 @@
   .CityInput {
     flex: 1;
     min-width: 0;
-    height: 26px;
+    height: 35 px;
     font-size: 0.75rem;
     padding: 2px 6px;
     border-radius: 4px;
+    margin-right: 5px;
   }
 
   .SearchButton {
-    height: 26px;
+    height: 35px;
     font-size: 0.75rem;
     padding: 0 8px;
     min-width: auto;

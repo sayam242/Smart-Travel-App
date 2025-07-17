@@ -7,8 +7,9 @@ export default function SearchBox({ updateInfo }) {
   const [city, setCity] = useState("");
   const [error, setError] = useState("");
 
-  const API_URL = "https://api.openweathermap.org/data/2.5/weather";
   const API_KEY = import.meta.env.VITE_API_KEY_OPENWEATHERMAP;
+  console.log("API_KEY", API_KEY);
+  const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
   const getWeatherInfo = async () => {
     try {
@@ -60,7 +61,7 @@ export default function SearchBox({ updateInfo }) {
   onChange={handleChange}
   className="CityInput"
   sx={{
-    height: '50px',
+   
     fontSize: '0.9rem',
     px: '12px',
     py: '0',
@@ -68,7 +69,6 @@ export default function SearchBox({ updateInfo }) {
     backgroundColor: '#e7f0ff', // match your container's exact color
     '& input': {
       padding: 0,
-      height: '50px',
       lineHeight: '50px',
     },
     '& fieldset': {

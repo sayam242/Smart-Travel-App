@@ -5,7 +5,7 @@
 .infoGrid {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   text-align: center;
   background: linear-gradient(to top, #14b8cd, #edfcff);
   color: black;
@@ -20,11 +20,13 @@
 .weatherInfo,
 .clothesSuggestion {
   background-color: #edfcff;
-  height: 250px;
-  
+  min-height: 250px;
+  max-height: 280px;
+  padding-top: 20ox;
   flex: 1 1 45%;
   border-radius: 10px;
   padding: 1rem;
+
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   text-align: center;
   min-width: 250px;
@@ -48,7 +50,7 @@
 
 
 /* ✅ MOBILE RESPONSIVE FIX */
-@media (min-width: 400px) {
+@media (max-width: 650px) {
   .InfoBox {
   display: flex;
   justify-content: center; /* Horizontal centering */
@@ -68,6 +70,7 @@
     width: 100%;
    min-width: 250px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     /* flex-direction: olumn; */
     align-content: center;
