@@ -1,0 +1,76 @@
+/* Places.css */
+
+.PlacesBox {
+  margin-top: 30px;
+  padding: 20px;
+  background: linear-gradient(to top, #14b8cd, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 1000px;             /* ✅ Desktop width */
+  width: 90%;                    /* ✅ Allows responsiveness */
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+}
+
+.category-badge {
+  display: inline-block;
+  background: #e0f7fa;
+  color: #0077cc;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-top: 4px;
+}
+
+
+.PlacesBox h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.PlaceItem {
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.2s ease;
+  list-style: none;
+}
+
+.PlaceItem:hover {
+  transform: scale(1.01);
+  background-color: #f5faff;
+}
+
+.PlaceItem span {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.PlaceItem strong {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.PlaceItem a {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.PlaceItem a:hover {
+  text-decoration: underline;
+}

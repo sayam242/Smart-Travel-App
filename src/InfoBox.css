@@ -1,0 +1,99 @@
+.InfoBox {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.infoGrid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  background: linear-gradient(to top, #14b8cd, #ffffff);
+  color: black;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 100%;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.weatherInfo,
+.clothesSuggestion {
+  background-color: white;
+  flex: 1 1 45%;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  min-width: 250px;
+}
+
+.weatherInfo h1 {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+}
+
+.weatherDetails {
+  margin-top: 0.5rem;
+}
+
+.clothesImage {
+  margin-top: 10px;
+  width: 100px;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+
+/* ✅ MOBILE RESPONSIVE FIX */
+@media (max-width: 650px) {
+  .infoContainer {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .infoGradient {
+    width: 100%;
+    max-width: 90vw; /* ✅ reduced size on mobile */
+    display: flex;
+    justify-content: center;
+  }
+
+  .infoCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(to top, #14b8cd, #ffffff);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .weatherInfo,
+  .clothesSuggestion {
+    width: 100%;
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .clothesImage {
+    width: 80px;
+    margin-top: 0.5rem;
+  }
+}

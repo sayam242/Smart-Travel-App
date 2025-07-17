@@ -1,0 +1,24 @@
+.WeatherApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Heading always on top */
+.WeatherApp h1 {
+  margin: 10px 0 20px 0;
+  font-size: 2rem;
+  text-align: center;
+  white-space: nowrap;          /* ✅ Prevents wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+  .WeatherApp h1 {
+    font-size: 1.5rem;           /* ✅ Smaller heading on mobile */
+  }
+}

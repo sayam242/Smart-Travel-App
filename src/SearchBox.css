@@ -1,0 +1,82 @@
+.SearchBox {
+  display: flex;
+  justify-content: center;
+  padding: 0.3rem 0.5rem; /* tight top/bottom padding */
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.SearchForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.CityInput {
+  background-color: white;
+  flex: 1 1 200px;
+  min-width: 180px;
+  border-radius: 6px;
+  height: 34px;
+  font-size: 0.9rem;
+  padding: 2px 8px;
+}
+
+.SearchButton {
+  height: 34px;
+  font-size: 0.9rem;
+  padding: 0 16px;
+  font-weight: 500;
+  text-transform: none;
+  min-width: 90px;
+}
+
+.ErrorText {
+  color: #d32f2f;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+/* ✅ Tight Responsive Styling for Mobile */
+@media (max-width: 600px) {
+  .SearchBox {
+    padding: 0;              /* Remove all padding */
+    margin: 0;
+  }
+
+  .SearchForm {
+    flex-direction: row;     /* Keep inline to reduce vertical space */
+    flex-wrap: nowrap;
+    gap: 4px;                /* Very tight spacing */
+    width: 100%;
+  }
+
+  .CityInput {
+    flex: 1;
+    min-width: 0;
+    height: 26px;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .SearchButton {
+    height: 26px;
+    font-size: 0.75rem;
+    padding: 0 8px;
+    min-width: auto;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .ErrorText {
+    font-size: 0.75rem;
+    margin-top: 2px;
+  }
+}
+
