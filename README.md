@@ -64,15 +64,19 @@ Then open: [http://localhost:5173](http://localhost:5173)
 
 ### **Desktop Preview**
 
-| **Weather Info**               | **Clothing Tip**               | **Places Nearby**             |
+| **Search Bar**               | **Weather Info & Cloting Tip**               | **Places Nearby**             |
 | ------------------------------ | ------------------------------ | ----------------------------- |
-| ![](./screenshots/weather.png) | ![](./screenshots/clothes.png) | ![](./screenshots/places.png) |
+| ![](./public/image1.png) | ![](./public/image2.png) | ![](./public/image4.png) |
+
+
+---
+
 
 ### **Mobile Preview**
 
-| **Weather Info**               | **Clothing Tip**               | **Places Nearby**             |
+| **Search Bar**               | **Weather Info & Clothing Tip**               | **Places Nearby**             |
 | ------------------------------ | ------------------------------ | ----------------------------- |
-| ![](./screenshots/weather.png) | ![](./screenshots/clothes.png) | ![](./screenshots/places.png) |
+| ![](./public/image5.png) | ![](./public/image6.png) | ![](./public/image7.png) |
 
 ---
 
