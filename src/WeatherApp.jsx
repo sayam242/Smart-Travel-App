@@ -1,8 +1,8 @@
 import {useState} from "react";
-import InfoBox from "./InfoBox.jsx";
-import SearchBox from "./SearchBox.jsx";
-import Places from "./Places.jsx";
-import "./WeatherApp.css"
+import InfoBox from "./components/InfoBox.jsx";
+import SearchBox from "./components/SearchBox.jsx";
+import Places from "./components/Places.jsx";
+import "./views/WeatherApp.css"
 export default function WeatherApp(){
         const [weather,setWeather]=useState({
             

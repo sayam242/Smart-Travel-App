@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./Places.css"; // keep your existing CSS
+import "../views/Places.css"; // keep your existing CSS
 
 export default function Places({ coord, condition }) {
   const [spots, setSpots] = useState([]);
-  const API_KEY = "10772a2619ab4c7a8b7e260fea0284ac";
+  const API_KEY = import.meta.env.VITE_API_KEY_GEOAPIFY;
 
   const getTouristSpots = async (lat, lon) => {
     try {

@@ -1,4 +1,4 @@
-import "./SearchBox.css";
+import "../views/SearchBox.css";
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Button from '@mui/material/Button';
 import { useState } from "react";
@@ -8,7 +8,7 @@ export default function SearchBox({ updateInfo }) {
   const [error, setError] = useState("");
 
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
-  const API_KEY = "76dd43d0a3a8561405d8529704451548";
+  const API_KEY = import.meta.env.VITE_API_KEY_OPENWEATHERMAP;
 
   const getWeatherInfo = async () => {
     try {

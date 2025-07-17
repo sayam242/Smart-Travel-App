@@ -36,7 +36,6 @@
 
 .SearchButton {
   height: 50px; /* Match OutlinedInput height */
-  color: #14b8cd;
   font-size: 0.9rem;
   padding: 0 16px;
   font-weight: 500;
