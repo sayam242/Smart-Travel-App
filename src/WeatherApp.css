@@ -18,6 +18,15 @@
 }
 
 @media (max-width: 600px) {
+  .WeatherApp{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100;
+  padding: none;
+  margin: none;
+  min-width: 100%;
+  }
   .WeatherApp h1 {
     font-size: 1.5rem;           /* ✅ Smaller heading on mobile */
   }

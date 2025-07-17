@@ -1,27 +1,16 @@
-.InfoBox {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  width: 100%;
-}
 
-.infoContainer {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 900px;
+.InfoBox{
+  margin-top: 50px;
 }
-
 .infoGrid {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
-  background: linear-gradient(to top, #14b8cd, #ffffff);
+  background: linear-gradient(to top, #14b8cd, #edfcff);
   color: black;
   border-radius: 12px;
-  padding: 1rem;
+  padding: 2rem;
   width: 100%;
   gap: 1rem;
   max-width: 800px;
@@ -30,7 +19,7 @@
 
 .weatherInfo,
 .clothesSuggestion {
-  background-color: white;
+  background-color: #edfcff;
   flex: 1 1 45%;
   border-radius: 10px;
   padding: 1rem;
@@ -58,35 +47,38 @@
 
 /* ✅ MOBILE RESPONSIVE FIX */
 @media (max-width: 650px) {
-  .infoContainer {
+  .InfoBox {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  padding-top: 5rem;
+}
+
+.infoContainer {
+  width: fit-content;
+  
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+  .infoGrid {
     width: 100%;
-    padding: 0 1rem;
+   min-width: 250px;
     display: flex;
     justify-content: center;
+    /* flex-direction: olumn; */
+    align-content: center;
+    align-items: center;
   }
 
-  .infoGradient {
-    width: 100%;
-    max-width: 90vw; /* ✅ reduced size on mobile */
-    display: flex;
-    justify-content: center;
-  }
-
-  .infoCard {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background: linear-gradient(to top, #14b8cd, #ffffff);
-    border-radius: 12px;
-    padding: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
+ 
 
   .weatherInfo,
   .clothesSuggestion {
     width: 100%;
     margin-bottom: 1rem;
-    background: white;
+    background: #edfcff;
     border-radius: 10px;
     padding: 1rem;
     box-sizing: border-box;
@@ -95,5 +87,8 @@
   .clothesImage {
     width: 80px;
     margin-top: 0.5rem;
+  }
+  p{
+    font-size: 10px;
   }
 }

@@ -52,15 +52,40 @@ export default function SearchBox({ updateInfo }) {
   return (
     <div className="SearchBox">
       <form onSubmit={handleSubmit} className="SearchForm">
-        <OutlinedInput
-          placeholder="Enter city name"
-          id="city"
-          required
-          value={city}
-          onChange={handleChange}
-          className="CityInput"
-        />
-        <Button variant="contained" type="submit" className="SearchButton">
+       <OutlinedInput
+  placeholder="Enter city name"
+  id="city"
+  required
+  value={city}
+  onChange={handleChange}
+  className="CityInput"
+  sx={{
+    height: '50px',
+    fontSize: '0.9rem',
+    px: '12px',
+    py: '0',
+    borderRadius: '8px',
+    backgroundColor: '#e7f0ff', // match your container's exact color
+    '& input': {
+      padding: 0,
+      height: '50px',
+      lineHeight: '50px',
+    },
+    '& fieldset': {
+      borderColor: '#e7f0ff',     // match bg color to "hide" border
+      borderWidth: '1px',
+      borderRadius: '8px',
+    },
+    '&:hover fieldset': {
+      borderColor: '#e7f0ff',     // same on hover
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: '#90caf9',     // subtle blue focus if needed
+    },
+  }}
+/>
+
+        <Button style={{backgroundColor:"#14b8cd", color:"black"}} variant="contained" type="submit" className="SearchButton">
           Search
         </Button>
       </form>

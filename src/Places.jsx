@@ -37,20 +37,18 @@ export default function Places({ coord, condition }) {
               .filter((spot) => spot.properties.name && spot.properties.place_id)
               .map((spot) => [spot.properties.place_id, spot])
           ).values()].map((spot) => (
-            <li className="PlaceItem" key={spot.properties.place_id}>
+            <li 
+            onClick={() => {
+              window.open(`https://www.google.com/maps/search/?api=1&query=${spot.properties.lat},${spot.properties.lon}`, '_blank');
+            }}
+            className="PlaceItem" key={spot.properties.place_id}>
               <strong>{spot.properties.name}</strong>
               <br />
-              <span className="category-badge">
+              {/* <span className="category-badge">
                 {spot.properties.categories?.[0]?.split(".")[1]?.replace(/_/g, " ") ?? "Place"}
-              </span>
+              </span> */}
               <br />
-              <a
-                href={`https://www.google.com/maps/search/?api=1&query=${spot.properties.lat},${spot.properties.lon}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View on Google Maps
-              </a>
+             <p style={{color:"#14b8cd"}}>Click to view directions</p>
             </li>
           ))}
         </ul>

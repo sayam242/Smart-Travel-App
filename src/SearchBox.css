@@ -5,36 +5,47 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 50px;
+  margin: 0; 
 }
 
 .SearchForm {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  margin: 0;              /* ✅ Important: remove default margin */
+  padding: 0;             /* ✅ Just in case */
+  flex-wrap: nowrap;
   width: 100%;
   max-width: 800px;
 }
 
 .CityInput {
-  background-color: white;
+  background-color: #edfcff;
+  border-radius: 6px !important;
+  height: 50px !important;
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 0 10px !important;
   flex: 1 1 200px;
   min-width: 180px;
-  border-radius: 6px;
-  height: 34px;
-  font-size: 0.9rem;
-  padding: 2px 8px;
+  box-sizing: border-box;
 }
 
+
 .SearchButton {
-  height: 34px;
+  height: 50px; /* Match OutlinedInput height */
+  color: #14b8cd;
   font-size: 0.9rem;
   padding: 0 16px;
   font-weight: 500;
   text-transform: none;
   min-width: 90px;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
+
 
 .ErrorText {
   color: #d32f2f;

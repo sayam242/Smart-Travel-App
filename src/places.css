@@ -3,7 +3,7 @@
 .PlacesBox {
   margin-top: 30px;
   padding: 20px;
-  background: linear-gradient(to top, #14b8cd, #ffffff);
+  background: linear-gradient(to top, #14b8cd, #edfcff);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -38,7 +38,7 @@ ul {
 }
 
 .PlaceItem {
-  background: #ffffff;
+  background: #edfcff;
   padding: 15px;
   margin-bottom: 1.2rem;
   border-radius: 10px;
@@ -50,7 +50,7 @@ ul {
 
 .PlaceItem:hover {
   transform: scale(1.01);
-  background-color: #f5faff;
+  background-color: #edfcff;
 }
 
 .PlaceItem span {
@@ -73,4 +73,12 @@ ul {
 
 .PlaceItem a:hover {
   text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .PlacesBox {
+    padding: 15px;
+    min-width: 250px;
+    align-items: center;
+  }
+
 }

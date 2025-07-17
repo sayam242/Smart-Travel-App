@@ -98,12 +98,14 @@ function getWeatherType({ temp, humidity, wind }) {
            {condition && (
   <div className="infoContainer">
 
-    <div  style={{
+    <div className="change" style={{
       
         // backgroundColor:"white",
         backgroundPosition: "center",
+        display: "flex",
+        justifyContent: "center",
         minHeight: "200px",
-        padding: "1rem",
+        // padding: "1rem",
         borderRadius: "12px",
         // width:
         
@@ -120,21 +122,21 @@ function getWeatherType({ temp, humidity, wind }) {
            
             <div className="infoGrid">
                 <div className="weatherInfo" style={{textAlign:"left", paddingTop:"20px"}}>
-                     <Typography gutterBottom variant="h5" component="div" style={{paddingLeft:"20px", paddingRight:"20px"}}>
+                     <Typography gutterBottom variant="h5" component="div" style={{paddingLeft:"0.5rem", paddingRight:"0.5rem"}}>
                     <b>
                         {info.city.charAt(0).toUpperCase() + info.city.slice(1)}{" "}
                         {weatherIcons[weatherType ?? unknown ]}
                     </b>
                     </Typography>
                     
-                    <Typography variant="body2" color="text.secondary" component={"span"} style={{  paddingLeft: "1rem", borderRadius: "10px" }}>
-                    <h1 style={{paddingLeft:"40px"}}>{info.temp}°C</h1>
-                    <div style={{display:"flex", justifyContent:"left"}}> 
+                    <Typography variant="body2" color="text.secondary" component={"span"} style={{  paddingLeft: "0.5rem",paddingRight: "0.5rem", borderRadius: "10px" }}>
+                    <h1 style={{textAlign:"left",paddingLeft:"1rem"}}>{info.temp}°C</h1>
+                    <div style={{display:"flex", justifyContent:"center"}}> 
 
-                    <p style={{paddingLeft:"40px",display:"flex"}}>Min: {info.tempMin}°C</p>
-                    <p style={{paddingLeft:"40px",display:"flex"}}>Max: {info.tempMax}°C</p>
-                    <p style={{paddingLeft:"40px",display:"flex"}}>Humidity: {info.humidity}%</p>
-                    <p style={{paddingLeft:"40px",display:"flex"}}>wind: {info.wind.speed} {info.wind.deg}</p>
+                    <p style={{display:"flex", textAlign:"center"}}>Min: <br />{info.tempMin}°C</p>
+                    <p style={{paddingLeft:"1rem",display:"flex",textAlign:"center"}}>Max: <br />{info.tempMax}°C</p>
+                    <p style={{paddingLeft:"1rem",display:"flex",textAlign:"center"}}>Humidity: <br />{info.humidity}%</p>
+                    <p style={{paddingLeft:"1rem",display:"flex",textAlign:"center"}}>wind: <br />{info.wind.speed}km/h {info.wind.deg}°</p>
                     </div>
                     </Typography>
                 </div>
